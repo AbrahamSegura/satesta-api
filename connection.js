@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const password = 'kye5NY3Rbt77oBup'
+const password = process.env.API_PASSWORD
 const CONNECTION_TRING = `mongodb+srv://abraham_admin_1:${password}@satestadb.rrnxmw7.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connect(CONNECTION_TRING).then(() => {
